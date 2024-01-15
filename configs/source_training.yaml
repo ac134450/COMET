@@ -23,7 +23,7 @@ model:
     feature_dim: 256
     lr: 1e-2  # we used 1e-2 for DomainNet and 1e-3 for VisDA
 data:
-  class_path: datasets.DomainNetDataModule  # select dataset (use VisDADataModule for VisDA)
+  class_path: datasets.DomainNetDataModule  # select dataset (use VisDADataModule for VisDA-C)
   init_args:
     batch_size: 64
     category_shift: 'OPDA'  # select category shift scenario
