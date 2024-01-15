@@ -9,6 +9,7 @@ This is the official repository to the paper "COMET: Contrastive Mean Teacher fo
 
 ### Source training
 We uploaded the checkpoints of our pre-trained source models. To still do the source training yourself, edit the corresponding config file [source_training.yaml](configs/source_training.yaml) accordingly and run the following command:
+
 `python fit --config configs/source_training.yaml`
 
 ### Target adaptation
