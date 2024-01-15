@@ -22,9 +22,9 @@ model:
   init_args:
     rejection_threshold: 0.5
     feature_dim: 256  # choose same number of feature dimensions as used for the source model (default is 256)
-    ckpt_dir: 'logs/domainnet/real_source/source_model_OPDA/checkpoints/source_ckpt.pt'  # select path to the checkpoints of source model matching the desired source domain and category shift 
+    ckpt_dir: 'logs/domainnet/real_source/source_model_OPDA/checkpoints/source_ckpt.pt'  # select path to the checkpoint of source model matching the desired source domain and category shift 
 data:
-  class_path: datasets.VisDADataModule  # select dataset (use VisDADataModule for VisDA)
+  class_path: datasets.VisDADataModule  # select dataset (use VisDADataModule for VisDA-C)
   init_args:
     batch_size: 64
     category_shift: 'OPDA'  # select category shift scenario
